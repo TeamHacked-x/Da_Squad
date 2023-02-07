@@ -16,7 +16,7 @@ hide_streamlit_items = """
             }
             
             .css-11w4czv e16nr0p32 {
-                display: none !important;
+                display: none;
             }
             </style>
             """
