@@ -8,8 +8,8 @@ options = ['Home', 'Spy', 'Never Have I Ever']
 game = st.sidebar.selectbox('Games 3al Lebnene', options)
 hide_streamlit_items = """
             <style>
-            /*header{visibility: hidden;}*/
-            /*#MainMenu {visibility: hidden;}*/
+            header{visibility: hidden;}
+            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
