@@ -9,9 +9,9 @@ hide_streamlit_items = """
             /*#MainMenu {visibility: hidden;}*/
             footer {visibility: hidden;}
 
-            .menu a{
+            a.menu-title{
                 color: white !important;
-                font-family: Copperplate, Fantasy;
+                font-family: Copperplate, Fantasy !important;
                 font-size: 30px;
             }
             
