@@ -11,6 +11,12 @@ hide_streamlit_items = """
             header{visibility: hidden;}
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            
+            .css-163ttbj p{
+                color: white !important;
+                font-family: Copperplate, Fantasy;
+                font-size: 30px;
+            }
             </style>
             """
 st.markdown(hide_streamlit_items, unsafe_allow_html=True)
