@@ -12,7 +12,7 @@ hide_streamlit_items = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             
-            .css-163ttbj p{
+            .css-6qob1r p{
                 color: white !important;
                 font-family: Copperplate, Fantasy;
                 font-size: 30px;
