@@ -15,7 +15,7 @@ hide_streamlit_items = """
                 font-size: 30px;
             }
             
-            .css-11w4czv e16nr0p32 {
+            .css-11w4czv {
                 display: none;
             }
             </style>
