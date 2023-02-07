@@ -1,4 +1,3 @@
-
 hide_streamlit_items = """
     <style>
     header{visibility: hidden;}

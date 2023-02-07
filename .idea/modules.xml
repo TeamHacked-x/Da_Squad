@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Da_Squad.iml" filepath="$PROJECT_DIR$/.idea/Da_Squad.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../LEBAuction/.idea/WebAuction.iml" filepath="$PROJECT_DIR$/../LEBAuction/.idea/WebAuction.iml" />
     </modules>
   </component>
 </project>
