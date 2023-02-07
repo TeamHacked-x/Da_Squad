@@ -1,17 +1,14 @@
 import json
 import streamlit as st
 import random as rd
-
+from streamlit_option_menu import option_menu
 st.set_page_config(page_title='Da Squad', initial_sidebar_state='expanded', layout='wide')
-
-options = ['Home', 'Spy', 'Never Have I Ever']
-game = st.sidebar.selectbox('Games 3al Lebnene', options)
 hide_streamlit_items = """
             <style>
-            header{visibility: hidden;}
-            #MainMenu {visibility: hidden;}
+            /*header{visibility: hidden;}*/
+            /*#MainMenu {visibility: hidden;}*/
             footer {visibility: hidden;}
-            
+
             .css-6qob1r p{
                 color: white !important;
                 font-family: Copperplate, Fantasy;
@@ -20,6 +17,11 @@ hide_streamlit_items = """
             </style>
             """
 st.markdown(hide_streamlit_items, unsafe_allow_html=True)
+
+
+options = ['Home', 'Spy', 'Never Have I Ever']
+with st.sidebar:
+    game = option_menu(menu_title='Games 3al Lebnene', menu_icon='None' , icons=['None', 'None', 'None'], options=options)
 
 class Games():
     def __init__(self):
