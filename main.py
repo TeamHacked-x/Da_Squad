@@ -6,6 +6,14 @@ st.set_page_config(page_title='Da Squad', initial_sidebar_state='expanded', layo
 
 options = ['Home', 'Spy', 'Never Have I Ever']
 game = st.sidebar.selectbox('Games 3al Lebnene', options)
+hide_streamlit_items = """
+            <style>
+            /*header{visibility: hidden;}*/
+            /*#MainMenu {visibility: hidden;}*/
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_items, unsafe_allow_html=True)
 
 class Games():
     def __init__(self):
