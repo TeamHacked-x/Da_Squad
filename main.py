@@ -18,7 +18,7 @@ hide_streamlit_items = """
             """
 st.markdown(hide_streamlit_items, unsafe_allow_html=True)
 
-
+#Option Menu
 options = ['Home', 'Spy', 'Never Have I Ever']
 with st.sidebar:
     game = option_menu(menu_title='Games 3al Lebnene', menu_icon='None' , icons=['None', 'None', 'None'], options=options)
@@ -112,11 +112,19 @@ class Games():
             if reveal:
                 try:
                     if data[-1] !=data[index]:
+                        if data[index][f'Player {index + 1}'] == 'Enta el Er' or data[index][f'Player {index + 1}'] == 'Ent Awal Er' or data[index][f'Player {index + 1}'] == 'Ent Tene Er' or data[index][f'Player {index + 1}'] == 'Ent Telit Er':
+                            st.subheader(f"Player {index + 1}")
+                            st.write(f"{data[index][f'Player {index + 1}']}")
+                        else:
+                            st.subheader(f"Player {index + 1}")
+                            st.write(f"Word:  {data[index][f'Player {index + 1}']}")
+                    elif data[-1] ==data[index] and (data[index][f'Player {index + 1}'] == 'Enta el Er' or data[index][f'Player {index + 1}'] == 'Ent Awal Er' or data[index][f'Player {index + 1}'] == 'Ent Tene Er' or data[index][f'Player {index + 1}'] == 'Ent Telit Er'):
                         st.subheader(f"Player {index + 1}")
-                        st.write(f"Word:  {data[index][f'Player {index + 1}']}")
+                        st.write(f"{data[index][f'Player {index + 1}']}")
+                        st.info('All Players Have Been Revealed!')
                     else:
                         st.subheader(f"Player {index + 1}")
-                        st.write(f"Word:  {data[index][f'Player {index + 1}']}")
+                        st.write(f"Word: {data[index][f'Player {index + 1}']}")
                         st.info('All Players Have Been Revealed!')
                 except IndexError:
                     st.info('All Players Have Been Revealed!')
