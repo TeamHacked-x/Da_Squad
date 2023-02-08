@@ -144,6 +144,7 @@ g = Games()
 
 if game == 'Home':
     st.markdown(ht.home_info, unsafe_allow_html=True)
+    st.image('Logo.jpg')
 
 elif game == 'Spy':
     st.header('Spy Ya Maneyik')
