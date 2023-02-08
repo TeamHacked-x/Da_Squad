@@ -38,7 +38,7 @@ home_info = """
     <html>
         <h1 class="game_title">Da Squad</h1>
         <div>
-            <p>Ahla w Sahla bel shabeb</p>
+            <p>Ahla w Sahla bel shabeb, We created this app for...</p>
         </div>
     </html>
     """
