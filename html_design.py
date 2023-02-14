@@ -1,3 +1,4 @@
+
 hide_streamlit_items = """
     <style>
     header{visibility: hidden;}
@@ -15,6 +16,12 @@ sidebar_title = """
             font-size: 25px;
             }
             
+        .title_logo{
+            color: white !important;
+            font-family: Copperplate, Fantasy;
+            font-size: 25px;
+            }
+            
         .title-container {
             background-color: #000000;
             border: 1px solid black;
@@ -24,7 +31,7 @@ sidebar_title = """
     <html>
         <center>
             <div class="title-container">
-            <h1 class="game_title">Games 3al Lebene</h1>
+            <h1 class="game_title">Games 3al Lebnene</h1>
             </div>
             </br>
         </center>
@@ -36,9 +43,18 @@ home_info = """
     
     </style>
     <html>
-        <h1 class="game_title">Da Squad</h1>
+        <table>
+            <tr class="title_logo">
+                <td>Da Squad</td>
+            </tr>
+        </table>
         <div>
-            <p>Ahla w Sahla bel shabeb, We created this app for...</p>
+            <table>
+                <tr>
+                    <td>Ahla bel shabeb</td>
+                    <td>Ahla bel shabeb</td>
+                </tr>
+            </table>
         </div>
     </html>
     """
