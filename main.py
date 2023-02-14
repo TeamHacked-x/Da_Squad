@@ -28,8 +28,6 @@ options = ['Spy', 'Never Have I Ever', 'Would You Rather']
 st.sidebar.markdown(ht.sidebar_title, unsafe_allow_html=True)
 login_user = st.sidebar.text_input('Username')
 login_pass = st.sidebar.text_input('Password', type='password')
-if st.sidebar.button('create'):
-    lg.add_users(login_user,login_pass)
 
 if st.sidebar.checkbox('Login'):
     if lg.login_user(login_user, login_pass):
